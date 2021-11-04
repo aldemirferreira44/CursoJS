@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004</title>
+    <style>
+        body{background-color: black;
+            color: ghostwhite;
+    }
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var n1 = Number(window.prompt('Digite um numero '))
+        var n2 = Number(window.prompt('Digite mais um numero '))
+        var m = n1 * n2
+        document.write(`Ola ${nome}. Seu nome tem ${nome.length} letras. ` )
+        document.write(`Seu nome em maisculo fica ${nome.toUpperCase()}, e em minusculo fica ${nome.toLowerCase()}`)
+        document.write(` O produto entre ${n1} e ${n2} é ${m}`)       
+    </script> 
+</body>
+</html>
