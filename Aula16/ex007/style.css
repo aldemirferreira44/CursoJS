@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    margin-top: 30px;
+    width: 900px;
+    padding: 2%;
+    border-radius: 2%;
+    background-color: honeydew;
+}
+
+footer {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+    display: block;
+    color: blanchedalmond;
+}
+
+select#sele {
+    width: 150px;
+}
