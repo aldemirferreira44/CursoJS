@@ -2,7 +2,7 @@
 //Classe MATH - Metodos e Constantes Matematicos
  //Constantes
 
- /* document.write(Math.PI); //Escreverá a constante PI
+  document.write(Math.PI); //Escreverá a constante PI
   document.write(Math.SQRT2); //Escreverá a raiz quadrada de 2
   document.write(Math.SQRT1_2); //Escreverá a raiz quadrada de 1/2
  
@@ -66,3 +66,20 @@
  }
 
  document.write(media(numeros));
+
+
+/* Aula 45 */
+//Escopo de Variaveis(Criação e visualização de variaveis dentro de Function) 
+ var cor = "Vermelho"
+
+ function nomecor(){
+   var cor = "Azul"               //Variaveis criadas dentro de Functions não podem ser selecionadas fora da mesma
+   document.write(cor + "<br>")
+ }
+
+ nomecor();
+ document.write(cor + "<br>") /*A cor aqui será Vermelho. Pois não é possivel selecionar a variavel dentro da Function
+                                pois a mesma está em um escopo diferente(uma codigo a parte, que só é visto se for executado via cmds)                                                                                     */
+
+ /*Variaveis dentro da Function não podem ser selecionadas de fora. Porém, variaveis de fora da Function podem ser selecionadas de
+  dentro da mesma */
