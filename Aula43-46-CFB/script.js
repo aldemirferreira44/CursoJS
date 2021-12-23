@@ -2,7 +2,7 @@
 //Classe MATH - Metodos e Constantes Matematicos
  //Constantes
 
-  document.write(Math.PI); //Escreverá a constante PI
+  /*document.write(Math.PI); //Escreverá a constante PI
   document.write(Math.SQRT2); //Escreverá a raiz quadrada de 2
   document.write(Math.SQRT1_2); //Escreverá a raiz quadrada de 1/2
  
@@ -10,7 +10,7 @@
   
   var valor = 10
   var angulo = 90
-  document.write(Math.abs(valor)) //Retornará o valor absoluto da variavel "valor"
+  document.write(Math.abs(valor)) //Retornará o valor absoluto da variavel "valor" (?)
   document.write(Math.ceil(11.3)) //Arrendondará o valor (sempre pra cima) do valor inserido
   document.write(Math.floor(9.8)) //Arrendondará o valor (sempre pra baixo) do valor inserido
   document.write(Math.round(4.8)) //Arrendondará da maneira usual(>= 0.5 : Pra cima. < 0.5 : Pra baixo)
@@ -18,7 +18,7 @@
   document.write(Math.sqrt(4)) //Retorna a raiz quadrada
   document.write(Math.random()) //Retorna um numero aleatorio entre 0 e 1
   document.write(Math.random()*10) //Aqui podemos setar um numero maior para ser o limite 
-  document.write(Math.random(Math.round())*10) //Aqui tornamo os numeros do intervalo em inteiros
+  document.write(Math.random(Math.round())*10) //Aqui tornamos os numeros do intervalo em inteiros
 
 
   document.write(Math.cos(angulo)); //Retornará o cosseno
@@ -29,10 +29,10 @@
 
 /* Aula 44 */
 //Funções - Functions
-//Functions guardam codigos que só serão executados caso a Function seja chamada(Seja por comando do usuario, seja no proprio codigo)
+//Functions guardam codigos que só serão executados caso a Function seja chamada(Seja por comando do usuario, seja pelo proprio codigo)
 
- function escreve(){
-   document.write("Ola mundo")   //Aqui, o codigo só será executado quando a Function for chamada
+ /*function escreve(){
+   document.write("Ola mundo")   //Este codigo apenas (APENAS) será executado quando a Function for chamada
  }
 
  escreve(); //Chamado da Function
@@ -54,7 +54,7 @@
 
  document.write(subtração(10,5)) //No entanto deve-se usar o Doc.Write na chamada, pois o resultado querendo ou não precisa ser impresso
 
-
+/*
  var numeros = new Array (4,2,3,98,15,150,30,25,42);
  function media(nums){
     var tam = nums.lenght;
@@ -66,11 +66,11 @@
  }
 
  document.write(media(numeros));
-
+*/
 
 /* Aula 45 */
 //Escopo de Variaveis(Criação e visualização de variaveis dentro de Function) 
- var cor = "Vermelho"
+ /*var cor = "Vermelho"
 
  function nomecor(){
    var cor = "Azul"               //Variaveis criadas dentro de Functions não podem ser selecionadas fora da mesma
@@ -83,3 +83,13 @@
 
  /*Variaveis dentro da Function não podem ser selecionadas de fora. Porém, variaveis de fora da Function podem ser selecionadas de
   dentro da mesma */
+
+
+/* Aula 46 */
+//Eventos 
+//Eventos são disparados quando o usuario interage de alguma forma no site(Clique,Mouse Over,etc)
+ function click(obj){
+   obj.style.position = "absolute";
+   obj.style.left = Math.random()* 1000 + "px";
+   obj.style.top = Math.random()* 1000 + "px";
+ }
