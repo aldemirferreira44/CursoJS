@@ -2,7 +2,7 @@
 //Classe MATH - Metodos e Constantes Matematicos
  //Constantes
 
-  /*document.write(Math.PI); //Escreverá a constante PI
+  document.write(Math.PI); //Escreverá a constante PI
   document.write(Math.SQRT2); //Escreverá a raiz quadrada de 2
   document.write(Math.SQRT1_2); //Escreverá a raiz quadrada de 1/2
  
@@ -31,7 +31,7 @@
 //Funções - Functions
 //Functions guardam codigos que só serão executados caso a Function seja chamada(Seja por comando do usuario, seja pelo proprio codigo)
 
- /*function escreve(){
+ function escreve(){
    document.write("Ola mundo")   //Este codigo apenas (APENAS) será executado quando a Function for chamada
  }
 
@@ -54,7 +54,7 @@
 
  document.write(subtração(10,5)) //No entanto deve-se usar o Doc.Write na chamada, pois o resultado querendo ou não precisa ser impresso
 
-/*
+
  var numeros = new Array (4,2,3,98,15,150,30,25,42);
  function media(nums){
     var tam = nums.lenght;
@@ -66,11 +66,11 @@
  }
 
  document.write(media(numeros));
-*/
+
 
 /* Aula 45 */
 //Escopo de Variaveis(Criação e visualização de variaveis dentro de Function) 
- /*var cor = "Vermelho"
+ var cor = "Vermelho"
 
  function nomecor(){
    var cor = "Azul"               //Variaveis criadas dentro de Functions não podem ser selecionadas fora da mesma
@@ -88,8 +88,12 @@
 /* Aula 46 */
 //Eventos 
 //Eventos são disparados quando o usuario interage de alguma forma no site(Clique,Mouse Over,etc)
- function click(obj){
-   obj.style.position = "absolute";
-   obj.style.left = Math.random()* 1000 + "px";
-   obj.style.top = Math.random()* 1000 + "px";
+ function click(obj1){
+   obj1.style.position = "absolute";
+   obj1.style.left = Math.random()*1000 + "px";
+   obj1.style.top = Math.random()*1000 + "px";
+ }
+
+ function cor(obj,color){
+   obj.style.backgroundColor = color
  }

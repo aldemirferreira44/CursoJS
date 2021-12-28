@@ -66,7 +66,7 @@ document.write(num + "<br>") //=10
 //Metodo InnerHTML e mais sobre getElementById
  //Mais sobre getElementById
   var cxt1 = document.getElementById("cxtxt").value; //Value é o conteudo que vai estar dentro do Input de Texto do HTML 
-  alert(cxt1) // Ao selecionarmos Value, selecionamos o conteudo dentro da Tag HTML, podendo utiliza-lo no JavaScript
+  alert(cxt1) // Ao selecionarmos Value, selecionamos o conteudo dentro do Input, podendo utiliza-lo no JavaScript
  
  //InnerHTML
  //Com esse metodo, podemos selecionar o texto dentro de uma tag HTML
